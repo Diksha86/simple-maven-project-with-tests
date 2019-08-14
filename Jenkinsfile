@@ -24,7 +24,7 @@ node {
    }
   stage('Ansible') {
      sh ls -lrt
-     sh --version
+     sh ansible --version
      sh 'ansible all -m ping -i inventory'
    }     
 }
