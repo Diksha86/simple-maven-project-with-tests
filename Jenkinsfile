@@ -22,8 +22,9 @@ node {
       junit '**/target/surefire-reports/TEST-*.xml'
       archiveArtifacts 'target/*.jar'
    }
-  stage('Ansible) {
+  stage('Ansible') {
      sh ls -lrt
      sh --version
      sh 'ansible all -m ping -i inventory'
    }     
+}
