@@ -26,5 +26,5 @@ node {
      //sh ls -lrt
      //sh ansible --version
      //sh 'ansible all -m ping -i inventory'
-   }     
+  // }     
 }
